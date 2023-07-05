@@ -4,6 +4,25 @@
 
 Sub-package of kbmod for sharing code among the kbmod package environment.
 
+## Getting started
+
+```
+git clone https://github.com/dirac-institute/kbmod-utils.git
+cd kbmod-utils
+pip install .
+```
+
+To verify that the installation was successful run the tests:
+```
+pytest tests
+```
+
+Developers will want to install the package as editable with developer tools. This has additional requirements and capabilities.
+```
+pip install -e .[dev]
+(cd docs && make html;) && open _readthedocs/html/index.html
+```
+
 ## Acknowledgements
 
 LINCC Frameworks is supported by Schmidt Futures, a philanthropic initiative
